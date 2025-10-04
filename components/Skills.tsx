@@ -45,7 +45,7 @@ const Skills = () => {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold text-gray-900 mb-8">Learning & Growth</h3>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            I'm always eager to learn new technologies and improve my skills. Currently exploring 
+            I&apos;m always eager to learn new technologies and improve my skills. Currently exploring 
             advanced React patterns, cloud architecture, and contributing to open-source projects.
           </p>
         </div>

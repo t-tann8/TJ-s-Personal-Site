@@ -20,7 +20,7 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">My Story</h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                I'm a passionate developer with a love for creating innovative solutions and beautiful user experiences. 
+                I&apos;m a passionate developer with a love for creating innovative solutions and beautiful user experiences. 
                 With a strong foundation in modern web technologies, I enjoy tackling complex problems and turning 
                 ideas into reality.
               </p>
@@ -29,7 +29,7 @@ const About = () => {
                 a career focused on building scalable, maintainable applications that make a difference.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+                When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, 
                 or sharing knowledge with the developer community.
               </p>
             </div>

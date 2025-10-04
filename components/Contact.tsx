@@ -37,14 +37,14 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from you!
+            Have a project in mind or want to collaborate? I&apos;d love to hear from you!
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let&apos;s Connect</h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="bg-primary-100 p-3 rounded-lg">
