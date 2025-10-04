@@ -1,5 +1,8 @@
+'use client'
+
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import Image from 'next/image'
+import Link from 'next/link'
 import TimeCladScreenshot from '../assets/images/TimeCladScreenshot.png'
 import TimeCladAdminScreenshot from '../assets/images/TimeCladAdminScreenshot.png'
 import CRSciScreenshot from '../assets/images/CRSciScreenshot.png'
@@ -9,58 +12,63 @@ import HOPEScreenshot from '../assets/images/HOPEScreenshot.png'
 
 const ProjectCard = ({ project }: { project: any }) => {
   return (
-    <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
-        <Image 
-          src={project.image} 
-          alt={`${project.title} screenshot`}
-          fill
-          className="object-cover"
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-        <p className="text-gray-600 mb-4">{project.description}</p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.technologies.map((tech: string, index: number) => (
-            <span 
-              key={index}
-              className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm"
-            >
-              {tech}
-            </span>
-          ))}
+    <Link href={`/projects/${project.id}`} className="block">
+      <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
+        <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
+          <Image 
+            src={project.image} 
+            alt={`${project.title} screenshot`}
+            fill
+            className="object-cover"
+          />
         </div>
-        <div className="flex space-x-4">
-          <a 
-            href={project.githubUrl} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center space-x-2 text-gray-600 hover:text-primary-600 transition-colors"
-          >
-            <FaGithub />
-            <span>Code</span>
-          </a>
-          {project.liveUrl && (
+        <div className="p-6">
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
+          <p className="text-gray-600 mb-4">{project.description}</p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.technologies.map((tech: string, index: number) => (
+              <span 
+                key={index}
+                className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          <div className="flex space-x-4">
             <a 
-              href={project.liveUrl} 
+              href={project.githubUrl} 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-gray-600 hover:text-primary-600 transition-colors"
+              onClick={(e) => e.stopPropagation()}
             >
-              <FaExternalLinkAlt />
-              <span>Live Demo</span>
+              <FaGithub />
+              <span>Code</span>
             </a>
-          )}
+            {project.liveUrl && (
+              <a 
+                href={project.liveUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-600 hover:text-primary-600 transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <FaExternalLinkAlt />
+                <span>Live Demo</span>
+              </a>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
 const Projects = () => {
   const projects = [
     {
+      id: 'timeclad',
       title: 'TimeClad - E-Commerce Platform',
       description: 'A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
@@ -69,6 +77,7 @@ const Projects = () => {
       image: TimeCladScreenshot
     },
     {
+      id: 'timeclad-admin',
       title: 'TimeClad Admin - E-Commerce Platform Admin',
       description: 'A responsive admin dashboard for the TimeClad e-commerce platform.',
       technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
@@ -77,6 +86,7 @@ const Projects = () => {
       image: TimeCladAdminScreenshot
     },
     {
+      id: 'crsci',
       title: 'CRSci - Ed Tech Platform',
       description: 'A collaborative education technology platform for teachers, students and principals to track and elevate student performances.',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
@@ -85,6 +95,7 @@ const Projects = () => {
       image: CRSciScreenshot
     },
     {
+      id: '104010',
       title: '104010 - Fitness Platform',
       description: 'Innovative fitness platform that allows custom workout plans and videos for class and individual coaching sessions.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
@@ -93,6 +104,7 @@ const Projects = () => {
       image: Screenshot104010
     },
     {
+      id: '104010-admin',
       title: '104010 Admin - Fitness Platform Admin',
       description: 'A responsive admin dashboard for the 104010 fitness platform.',
       technologies: ['Next.js', 'MDX', 'Prisma', 'PostgreSQL'],
@@ -101,6 +113,7 @@ const Projects = () => {
       image: Screenshot104010Admin
     },
     {
+      id: 'hope',
       title: 'HOPE (Hearts Open Primary Education) - Website',
       description: 'A landing page for the HOPE (Hearts Open Primaru Education) organization.',
       technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
