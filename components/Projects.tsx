@@ -1,10 +1,21 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import Image from 'next/image'
+import TimeCladScreenshot from '../assets/images/TimeCladScreenshot.png'
+import TimeCladAdminScreenshot from '../assets/images/TimeCladAdminScreenshot.png'
+import CRSciScreenshot from '../assets/images/CRSciScreenshot.png'
+import Screenshot104010 from '../assets/images/104010Screenshot.png'
+import HOPEScreenshot from '../assets/images/HOPEScreenshot.png'
 
 const ProjectCard = ({ project }: { project: any }) => {
   return (
     <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="h-48 bg-gray-200 flex items-center justify-center">
-        <span className="text-gray-500">Project Screenshot</span>
+      <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
+        <Image 
+          src={project.image} 
+          alt={`${project.title} screenshot`}
+          fill
+          className="object-cover"
+        />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
@@ -53,42 +64,48 @@ const Projects = () => {
       description: 'A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       githubUrl: 'https://github.com/t-tann8/TimeClad',
-      liveUrl: 'https://example.com'
+      liveUrl: 'https://example.com',
+      image: TimeCladScreenshot
     },
     {
       title: 'TimeClad Admin - E-Commerce Platform Admin',
       description: 'A responsive admin dashboard for the TimeClad e-commerce platform.',
       technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
       githubUrl: 'https://github.com/t-tann8/TimeClad-Admin',
-      liveUrl: 'https://example.com'
+      liveUrl: 'https://example.com',
+      image: TimeCladAdminScreenshot
     },
     {
       title: 'CRSci - Ed Tech Platform',
       description: 'A collaborative education technology platform for teachers, students and principals to track and elevate student performances.',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
       githubUrl: 'https://github.com/t-tann8/CRSci',
-      liveUrl: 'https://example.com'
+      liveUrl: 'https://example.com',
+      image: CRSciScreenshot
     },
     {
       title: '104010 - Fitness Platform',
       description: 'Innovative fitness platform that allows custom workout plans and videos for class and individual coaching sessions.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
       githubUrl: 'https://github.com/t-tann8/104010',
-      liveUrl: 'https://example.com'
+      liveUrl: 'https://example.com',
+      image: Screenshot104010
     },
     {
       title: '104010 Admin - Fitness Platform Admin',
       description: 'A responsive admin dashboard for the 104010 fitness platform.',
       technologies: ['Next.js', 'MDX', 'Prisma', 'PostgreSQL'],
       githubUrl: 'https://github.com/t-tann8/104010-Admin',
-      liveUrl: 'https://example.com'
+      liveUrl: 'https://example.com',
+      image: Screenshot104010
     },
     {
       title: 'HOPE (Hearts Open Primary Education) - Website',
       description: 'A landing page for the HOPE (Hearts Open Primaru Education) organization.',
       technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
       githubUrl: 'https://github.com/t-tann8/HOPE',
-      liveUrl: null
+      liveUrl: null,
+      image: HOPEScreenshot
     }
   ]
 
