@@ -4,6 +4,7 @@ import TimeCladScreenshot from '../assets/images/TimeCladScreenshot.png'
 import TimeCladAdminScreenshot from '../assets/images/TimeCladAdminScreenshot.png'
 import CRSciScreenshot from '../assets/images/CRSciScreenshot.png'
 import Screenshot104010 from '../assets/images/104010Screenshot.png'
+import Screenshot104010Admin from '../assets/images/104010-AdminScreenshot.png'
 import HOPEScreenshot from '../assets/images/HOPEScreenshot.png'
 
 const ProjectCard = ({ project }: { project: any }) => {
@@ -97,7 +98,7 @@ const Projects = () => {
       technologies: ['Next.js', 'MDX', 'Prisma', 'PostgreSQL'],
       githubUrl: 'https://github.com/t-tann8/104010-Admin',
       liveUrl: 'https://example.com',
-      image: Screenshot104010
+      image: Screenshot104010Admin
     },
     {
       title: 'HOPE (Hearts Open Primary Education) - Website',
