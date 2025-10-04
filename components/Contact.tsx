@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-900">Email</p>
-                  <p className="text-gray-600">your.email@example.com</p>
+                  <p className="text-gray-600">tracytann23@gmail.com</p>
                 </div>
               </div>
               
@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-900">Phone</p>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+1 267-241-9258</p>
                 </div>
               </div>
               
@@ -72,7 +72,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium text-gray-900">Location</p>
-                  <p className="text-gray-600">San Francisco, CA</p>
+                  <p className="text-gray-600">Washington, D.C.</p>
                 </div>
               </div>
             </div>
@@ -80,10 +80,10 @@ const Contact = () => {
             <div className="mt-8">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+                <a href="https://github.com/t-tann8?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
                   <FaGithub size={24} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+                <a href="https://www.linkedin.com/in/tracytannjr/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
                   <FaLinkedin size={24} />
                 </a>
               </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder="your.email@example.com"
+                    placeholder="tracytann23@gmail.com"
                   />
                 </div>
               </div>

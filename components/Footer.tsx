@@ -51,7 +51,7 @@ const Footer = () => {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <FaTwitter size={24} />
               </a>
-              <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:tracytann23@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                 <FaEnvelope size={24} />
               </a>
             </div>

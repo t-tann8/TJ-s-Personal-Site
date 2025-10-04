@@ -10,7 +10,7 @@ const Hero = () => {
             Hi, I&apos;m <span className="text-primary-600">TJ</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            A passionate developer creating innovative solutions and beautiful user experiences
+            An experienced product builder and software engineer with a passion for building impactful products from scratch. 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Link 
@@ -28,10 +28,10 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+            <a href="https://github.com/t-tann8?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
               <FaGithub size={32} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
+            <a href="https://www.linkedin.com/in/tracytannjr/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary-600 transition-colors">
               <FaLinkedin size={32} />
             </a>
           </div>

@@ -49,45 +49,45 @@ const ProjectCard = ({ project }: { project: any }) => {
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
+      title: 'TimeClad - E-Commerce Platform',
       description: 'A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/t-tann8/TimeClad',
       liveUrl: 'https://example.com'
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com'
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard with location-based forecasts and interactive charts.',
+      title: 'TimeClad Admin - E-Commerce Platform Admin',
+      description: 'A responsive admin dashboard for the TimeClad e-commerce platform.',
       technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/t-tann8/TimeClad-Admin',
       liveUrl: 'https://example.com'
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with Next.js and deployed on Vercel.',
+      title: 'CRSci - Ed Tech Platform',
+      description: 'A collaborative education technology platform for teachers, students and principals to track and elevate student performances.',
+      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
+      githubUrl: 'https://github.com/t-tann8/CRSci',
+      liveUrl: 'https://example.com'
+    },
+    {
+      title: '104010 - Fitness Platform',
+      description: 'Innovative fitness platform that allows custom workout plans and videos for class and individual coaching sessions.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/t-tann8/104010',
       liveUrl: 'https://example.com'
     },
     {
-      title: 'Blog Platform',
-      description: 'A content management system for blogging with markdown support and SEO optimization.',
+      title: '104010 Admin - Fitness Platform Admin',
+      description: 'A responsive admin dashboard for the 104010 fitness platform.',
       technologies: ['Next.js', 'MDX', 'Prisma', 'PostgreSQL'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/t-tann8/104010-Admin',
       liveUrl: 'https://example.com'
     },
     {
-      title: 'Mobile App',
-      description: 'A cross-platform mobile application with offline support and push notifications.',
+      title: 'HOPE (Hearts Open Primary Education) - Website',
+      description: 'A landing page for the HOPE (Hearts Open Primaru Education) organization.',
       technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/t-tann8/HOPE',
       liveUrl: null
     }
   ]
