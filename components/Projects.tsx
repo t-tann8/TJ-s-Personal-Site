@@ -15,12 +15,23 @@ const ProjectCard = ({ project }: { project: any }) => {
     <Link href={`/projects/${project.id}`} className="block">
       <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
         <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
-          <Image 
-            src={project.image} 
-            alt={`${project.title} screenshot`}
-            fill
-            className="object-cover"
-          />
+          {project.image ? (
+            <Image 
+              src={project.image} 
+              alt={`${project.title} screenshot`}
+              fill
+              className="object-cover"
+            />
+          ) : (
+            <div className="flex flex-col items-center justify-center text-gray-500">
+              <div className="w-16 h-16 bg-gray-300 rounded-lg flex items-center justify-center mb-2">
+                <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <span className="text-sm font-medium">Project Preview</span>
+            </div>
+          )}
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
@@ -120,6 +131,51 @@ const Projects = () => {
       githubUrl: 'https://github.com/t-tann8/HOPE',
       liveUrl: null,
       image: HOPEScreenshot
+    },
+    {
+      id: 'task-manager',
+      title: 'Relai Portal',
+      description: 'A comprehensive project management application with team collaboration features and real-time updates.',
+      technologies: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
+      githubUrl: 'https://github.com/t-tann8/TaskFlow',
+      liveUrl: 'https://taskflow-demo.com',
+      image: null
+    },
+    {
+      id: 'weather-app',
+      title: 'EVALV',
+      description: 'A beautiful weather application with detailed forecasts, maps, and location-based recommendations.',
+      technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js'],
+      githubUrl: 'https://github.com/t-tann8/WeatherCast',
+      liveUrl: 'https://weathercast-app.com',
+      image: null
+    },
+    {
+      id: 'blog-platform',
+      title: 'Secure The Bags',
+      description: 'A modern blogging platform with rich text editing, SEO optimization, and analytics dashboard.',
+      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
+      githubUrl: 'https://github.com/t-tann8/BlogSpace',
+      liveUrl: 'https://blogspace-demo.com',
+      image: null
+    },
+    {
+      id: 'chat-app',
+      title: 'Avenu',
+      description: 'A real-time messaging application with group chats, file sharing, and video calling capabilities.',
+      technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js'],
+      githubUrl: 'https://github.com/t-tann8/ChatConnect',
+      liveUrl: 'https://chatconnect-demo.com',
+      image: null
+    },
+    {
+      id: 'e-learning',
+      title: 'Union Fithub',
+      description: 'An interactive e-learning platform with video courses, quizzes, progress tracking, and certificates.',
+      technologies: ['Angular', 'Node.js', 'AWS S3', 'Stripe'],
+      githubUrl: 'https://github.com/t-tann8/EduLearn',
+      liveUrl: 'https://edulearn-platform.com',
+      image: null
     }
   ]
 
@@ -133,10 +189,14 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
+        <div className="overflow-x-auto pb-4">
+          <div className="flex space-x-6 min-w-max">
+            {projects.map((project, index) => (
+              <div key={index} className="flex-shrink-0 w-80">
+                <ProjectCard project={project} />
+              </div>
+            ))}
+          </div>
         </div>
         
         <div className="text-center mt-12">

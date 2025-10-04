@@ -111,26 +111,126 @@ const projects = [
       'Integration with main platform'
     ]
   },
-  {
-    id: 'hope',
-    title: 'HOPE (Hearts Open Primary Education) - Website',
-    description: 'A landing page for the HOPE (Hearts Open Primary Education) organization.',
-    technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
-    githubUrl: 'https://github.com/t-tann8/HOPE',
-    liveUrl: null,
-    image: HOPEScreenshot,
-    longDescription: 'HOPE (Hearts Open Primary Education) is a dedicated website for an educational organization focused on providing quality primary education. The platform serves as both an informational resource and a community hub for parents, students, and educators.',
-    features: [
-      'Organization information and mission',
-      'Program and curriculum details',
-      'Event and announcement system',
-      'Contact and enrollment information',
-      'Resource library for parents',
-      'Student showcase and achievements',
-      'Community forum and discussions',
-      'Mobile-responsive design'
-    ]
-  }
+    {
+      id: 'hope',
+      title: 'HOPE (Hearts Open Primary Education) - Website',
+      description: 'A landing page for the HOPE (Hearts Open Primary Education) organization.',
+      technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
+      githubUrl: 'https://github.com/t-tann8/HOPE',
+      liveUrl: null,
+      image: HOPEScreenshot,
+      longDescription: 'HOPE (Hearts Open Primary Education) is a dedicated website for an educational organization focused on providing quality primary education. The platform serves as both an informational resource and a community hub for parents, students, and educators.',
+      features: [
+        'Organization information and mission',
+        'Program and curriculum details',
+        'Event and announcement system',
+        'Contact and enrollment information',
+        'Resource library for parents',
+        'Student showcase and achievements',
+        'Community forum and discussions',
+        'Mobile-responsive design'
+      ]
+    },
+    {
+      id: 'task-manager',
+      title: 'TaskFlow - Project Management Tool',
+      description: 'A comprehensive project management application with team collaboration features and real-time updates.',
+      technologies: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
+      githubUrl: 'https://github.com/t-tann8/TaskFlow',
+      liveUrl: 'https://taskflow-demo.com',
+      image: null,
+      longDescription: 'TaskFlow is a modern project management tool designed to streamline team collaboration and project tracking. Built with Vue.js and real-time capabilities, it provides teams with intuitive tools for task management, progress tracking, and seamless communication.',
+      features: [
+        'Real-time task updates and notifications',
+        'Team collaboration and assignment features',
+        'Project timeline and milestone tracking',
+        'File sharing and document management',
+        'Progress analytics and reporting',
+        'Customizable project templates',
+        'Integration with popular tools',
+        'Mobile app for on-the-go management'
+      ]
+    },
+    {
+      id: 'weather-app',
+      title: 'WeatherCast - Weather Dashboard',
+      description: 'A beautiful weather application with detailed forecasts, maps, and location-based recommendations.',
+      technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js'],
+      githubUrl: 'https://github.com/t-tann8/WeatherCast',
+      liveUrl: 'https://weathercast-app.com',
+      image: null,
+      longDescription: 'WeatherCast delivers comprehensive weather information with an elegant, user-friendly interface. Featuring detailed forecasts, interactive maps, and personalized recommendations, it helps users stay informed about weather conditions wherever they are.',
+      features: [
+        'Detailed 7-day weather forecasts',
+        'Interactive weather maps',
+        'Location-based weather alerts',
+        'Hourly temperature and precipitation charts',
+        'UV index and air quality information',
+        'Weather widget for home screen',
+        'Offline weather data caching',
+        'Multiple location support'
+      ]
+    },
+    {
+      id: 'blog-platform',
+      title: 'BlogSpace - Content Management Platform',
+      description: 'A modern blogging platform with rich text editing, SEO optimization, and analytics dashboard.',
+      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
+      githubUrl: 'https://github.com/t-tann8/BlogSpace',
+      liveUrl: 'https://blogspace-demo.com',
+      image: null,
+      longDescription: 'BlogSpace is a comprehensive content management platform designed for bloggers, writers, and content creators. It combines powerful writing tools with advanced SEO features and detailed analytics to help creators build and grow their audience.',
+      features: [
+        'Rich text editor with markdown support',
+        'SEO optimization tools and meta management',
+        'Content scheduling and publishing',
+        'Analytics dashboard with traffic insights',
+        'Comment system and community features',
+        'Custom themes and responsive design',
+        'Social media integration',
+        'Content backup and version control'
+      ]
+    },
+    {
+      id: 'chat-app',
+      title: 'ChatConnect - Real-time Messaging',
+      description: 'A real-time messaging application with group chats, file sharing, and video calling capabilities.',
+      technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js'],
+      githubUrl: 'https://github.com/t-tann8/ChatConnect',
+      liveUrl: 'https://chatconnect-demo.com',
+      image: null,
+      longDescription: 'ChatConnect revolutionizes communication with its real-time messaging platform. Featuring instant messaging, group chats, file sharing, and video calling, it provides a complete communication solution for personal and professional use.',
+      features: [
+        'Real-time instant messaging',
+        'Group chat and channel management',
+        'File and media sharing',
+        'Video and voice calling with WebRTC',
+        'Message encryption and security',
+        'Message search and history',
+        'Custom emoji and reactions',
+        'Mobile and desktop applications'
+      ]
+    },
+    {
+      id: 'e-learning',
+      title: 'EduLearn - Online Learning Platform',
+      description: 'An interactive e-learning platform with video courses, quizzes, progress tracking, and certificates.',
+      technologies: ['Angular', 'Node.js', 'AWS S3', 'Stripe'],
+      githubUrl: 'https://github.com/t-tann8/EduLearn',
+      liveUrl: 'https://edulearn-platform.com',
+      image: null,
+      longDescription: 'EduLearn transforms online education with its comprehensive learning management system. Designed for educators and students, it provides interactive courses, assessment tools, progress tracking, and certification programs.',
+      features: [
+        'Interactive video course creation',
+        'Automated quiz and assessment system',
+        'Student progress tracking and analytics',
+        'Certificate generation and management',
+        'Discussion forums and peer interaction',
+        'Mobile learning app',
+        'Payment processing for premium courses',
+        'Instructor dashboard and course management'
+      ]
+    }
 ]
 
 interface ProjectPageProps {
@@ -167,13 +267,25 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           {/* Project Image */}
           <div className="space-y-6">
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
-              <Image 
-                src={project.image} 
-                alt={`${project.title} screenshot`}
-                width={800}
-                height={600}
-                className="w-full h-full object-cover"
-              />
+              {project.image ? (
+                <Image 
+                  src={project.image} 
+                  alt={`${project.title} screenshot`}
+                  width={800}
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full text-gray-500">
+                  <div className="w-24 h-24 bg-gray-300 rounded-lg flex items-center justify-center mb-4">
+                    <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                  </div>
+                  <span className="text-lg font-medium">Project Preview</span>
+                  <span className="text-sm text-gray-400 mt-1">Screenshot coming soon</span>
+                </div>
+              )}
             </div>
             
             {/* Action Buttons */}
