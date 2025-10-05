@@ -114,7 +114,9 @@ const Timeline = () => {
             {timelineEvents.map((event, index) => (
               <div
                 key={index}
-                ref={(el) => (eventRefs.current[index] = el)}
+                ref={(el) => {
+                  eventRefs.current[index] = el
+                }}
                 className={`relative flex items-center ${
                   index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
                 } ${activeEvent === index ? 'scale-105' : 'scale-100'} transition-all duration-500`}
