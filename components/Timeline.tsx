@@ -6,42 +6,88 @@ interface TimelineEvent {
   year: string
   title: string
   description: string
-  category: 'education' | 'work' | 'project' | 'achievement'
+  category: 'education' | 'work' | 'project' | 'achievement' | 'company'
 }
 
 const Timeline = () => {
   const [activeEvent, setActiveEvent] = useState(0)
+  const [isClient, setIsClient] = useState(false)
   const timelineRef = useRef<HTMLDivElement>(null)
   const eventRefs = useRef<(HTMLDivElement | null)[]>([])
 
   const timelineEvents: TimelineEvent[] = [
     {
-      year: '2021',
+      year: 'May 2021',
       title: 'Graduated Undergrad from University of Richmond',
       description: 'Began my journey in higher education, studying business and entrepreneurship.',
       category: 'education'
     },
     {
-      year: '2022',
+      year: 'August 2021',
       title: 'Closed college Storage and Logistics Company. Hired at Real Estate tech startup',
       description: 'Launched and operated a storage and logistics company that scaled across Virginia.',
       category: 'work'
     },
     {
-      year: '2023',
+      year: 'October 2023',
       title: 'Joined 35th St Builders ',
       description: 'Led client sourcing, product development for all new projects.',
+      category: 'company'
+    },
+    {
+      year: 'March 2024',
+      title: 'Completed TimeClad',
+      description: 'Completed TimeClad, a full-stack e-commerce platform.',
       category: 'project'
     },
     {
-      year: '2024',
-      title: 'Attended Coding Bootcamp',
+      year: 'June 2024',
+      title: 'Completed CRSci',
+      description: 'Completed CRSci, a collaborative education technology platform.',
+      category: 'project'
+    },
+    {
+      year: 'September 2024',
+      title: 'Completed 104010',
+      description: 'Completed 104010, a fitness platform.',
+      category: 'project'
+    },
+    {
+      year: 'January 2024',
+      title: 'Launched Relai',
+      description: 'Launched Relai, introduced Exchange Zones - a new way to drop off and pick up items asynchronously.',
+      category: 'company'
+    },
+    {
+      year: 'November 2024',
+      title: 'Earned Coding Bootcamp Certificate',
       description: 'Graduated from Coding Dojo Bootcamp. Rebuilt Relai suite of applications.',
       category: 'education'
     },
+    {
+      year: 'December 2024',
+      title: 'Launched Secure The Bags',
+      description: 'Launched Secure The Bags Mobile App. Over 100 active users in the first month.',
+      category: 'project'
+    },
+    {
+      year: 'March 2025',
+      title: 'EVALV',
+      description: 'Launched EVALV Mobile App. Over 100 active users in the first month. EVALV is a mobile app that allows users to rent EV chargers from Exchange Zones.',
+      category: 'project'
+    },
+
+    
+
   ]
 
   useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isClient) return
+
     const handleScroll = () => {
       if (!timelineRef.current) return
 
@@ -63,7 +109,7 @@ const Timeline = () => {
     handleScroll() // Initial call
 
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [timelineEvents.length])
+  }, [timelineEvents.length, isClient])
 
   const getCategoryColor = (category: TimelineEvent['category']) => {
     switch (category) {
@@ -75,6 +121,8 @@ const Timeline = () => {
         return 'bg-purple-500'
       case 'achievement':
         return 'bg-orange-500'
+      case 'company':
+        return 'bg-indigo-500'
       default:
         return 'bg-gray-500'
     }
@@ -90,9 +138,30 @@ const Timeline = () => {
         return '🚀'
       case 'achievement':
         return '🏆'
+      case 'company':
+        return '🏢'
       default:
         return '📅'
     }
+  }
+
+  // Don't render until client-side hydration is complete
+  if (!isClient) {
+    return (
+      <section id="timeline" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Journey</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              A timeline of key milestones and experiences that shaped my career
+            </p>
+          </div>
+          <div className="flex justify-center items-center h-96">
+            <div className="animate-pulse text-gray-500">Loading timeline...</div>
+          </div>
+        </div>
+      </section>
+    )
   }
 
   return (
