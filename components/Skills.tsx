@@ -11,6 +11,10 @@ const Skills = () => {
     {
       title: 'Tools & Others',
       skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Figma', 'VS Code', 'Stripe', 'Socket.io', 'WebRTC']
+    },
+    {
+      title: 'Product Management',
+      skills: ['Product Roadmapping', 'User Personas', 'Agile Methodologies', 'Jira', 'Confluence', 'UX/UI Design', 'Multiple Stakeholder Management']
     }
   ]
 
