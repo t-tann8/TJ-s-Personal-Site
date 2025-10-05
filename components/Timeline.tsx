@@ -24,7 +24,7 @@ const Timeline = () => {
     },
     {
       year: 'August 2021',
-      title: 'Closed college Storage and Logistics Company. Hired at Real Estate tech startup',
+      title: 'Closed college storage and logistics company. Hired at Real Estate tech startup',
       description: 'Launched and operated a storage and logistics company that scaled across Virginia.',
       category: 'work'
     },
