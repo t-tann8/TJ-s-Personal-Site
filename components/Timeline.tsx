@@ -35,6 +35,12 @@ const Timeline = () => {
       category: 'company'
     },
     {
+      year: 'January 2024',
+      title: 'Launched Relai',
+      description: 'Launched Relai, introduced Exchange Zones - a new way to drop off and pick up items asynchronously.',
+      category: 'company'
+    },
+    {
       year: 'March 2024',
       title: 'Completed TimeClad',
       description: 'Completed TimeClad, a full-stack e-commerce platform.',
@@ -51,12 +57,6 @@ const Timeline = () => {
       title: 'Completed 104010',
       description: 'Completed 104010, a fitness platform.',
       category: 'project'
-    },
-    {
-      year: 'January 2024',
-      title: 'Launched Relai',
-      description: 'Launched Relai, introduced Exchange Zones - a new way to drop off and pick up items asynchronously.',
-      category: 'company'
     },
     {
       year: 'November 2024',
@@ -77,7 +77,6 @@ const Timeline = () => {
       category: 'project'
     },
 
-    
 
   ]
 
