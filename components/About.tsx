@@ -1,4 +1,46 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import PersonalPhoto1 from '../assets/images/PersonalPhoto1.png'
+import PersonalPhoto2 from '../assets/images/PersonalPhoto2.png'
+import PersonalPhoto3 from '../assets/images/PersonalPhoto3.png'
+
 const About = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  
+  const carouselImages = [
+    {
+      src: PersonalPhoto1,
+      alt: 'Personal Photo 1',
+      title: 'About Me'
+    },
+    {
+      src: PersonalPhoto2,
+      alt: 'Personal Photo 2',
+      title: 'Personal'
+    },
+    {
+      src: PersonalPhoto3,
+      alt: 'Personal Photo 3',
+      title: 'Portfolio'
+    }
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === carouselImages.length - 1 ? 0 : prevIndex + 1
+      )
+    }, 8000) // Change image every 6 seconds
+
+    return () => clearInterval(interval)
+  }, [carouselImages.length])
+
+  const goToSlide = (index: number) => {
+    setCurrentImageIndex(index)
+  }
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,8 +53,37 @@ const About = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <span className="text-gray-500 text-lg">Your Photo Here</span>
+            {/* Image Carousel */}
+            <div className="relative">
+              <div className="aspect-square bg-white rounded-lg shadow-lg overflow-hidden">
+                <Image 
+                  src={carouselImages[currentImageIndex].src}
+                  alt={carouselImages[currentImageIndex].alt}
+                  fill
+                  className="object-cover transition-opacity duration-500"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 className="text-white text-lg font-semibold">
+                    {carouselImages[currentImageIndex].title}
+                  </h3>
+                </div>
+              </div>
+              
+              {/* Carousel Indicators */}
+              <div className="flex justify-center mt-4 space-x-2">
+                {carouselImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+                      index === currentImageIndex 
+                        ? 'bg-primary-600' 
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
           
