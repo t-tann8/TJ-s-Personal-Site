@@ -91,16 +91,13 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">My Story</h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                I am a builder at heart. One of the first challenges I fell in love was assembling furniture for my family and neighbors as young as seven years old.
-                I have carried that wonder for building from scratch since then. In college, I founded and operated a storage and logistics company that scaled across the state of Virginia.
+              I’ve always been a builder at heart. My fascination with creating things started early — assembling furniture for my family and neighbors when I was just seven years old. That same curiosity and drive to build from scratch has stayed with me ever since.
               </p>
               <p>
-                Afterwards, I founded a tech company, Relai, where my journey into  development began.
-                We worked with several development shops to build our initial product suite, I began learning how to code to both manage outsourced developers and reduce our dependency on them.
-                After growing more comfortable with coding, I attended a bootcamp to learn how to build full-stack applications from scratch. Afterwards, I dove into building my own products. Please see the projects section to learn more about my work.
+              In college, I founded and operated a storage and logistics company that scaled across the state of Virginia. Afterward, I founded Relai, a tech company where my journey into software development began. Initially, we partnered with development agencies to build our first products, but I soon began teaching myself to code to better manage our teams and reduce dependency on outsourced developers. This curiosity led me to attend a coding bootcamp, where I learned how to build full-stack applications end-to-end. Since then, I’ve been building my own products — you can explore some of them in the Projects section.
               </p>
               <p>
-                When I am not coding, I am reading a book most likely on personal finance, psychology, or new technologies. I enjoyed educational podcasts and documentaries with a sprinkle of action, suspenseful movies.
+              When I’m not coding, I’m usually reading about personal finance, psychology, or emerging technologies. I also enjoy educational podcasts, documentaries, and the occasional action or suspense film.
               </p>
             </div>
             
