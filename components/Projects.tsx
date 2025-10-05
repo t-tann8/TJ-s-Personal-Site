@@ -87,7 +87,7 @@ const Projects = () => {
       id: 'timeclad',
       title: 'TimeClad - E-Commerce Platform',
       description: 'A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe','Express.js', 'Socket.io', 'TypeScript', 'Tailwind CSS', 'Redis'],
       githubUrl: 'https://github.com/t-tann8/TimeClad',
       liveUrl: 'https://example.com',
       image: TimeCladScreenshot
@@ -96,7 +96,7 @@ const Projects = () => {
       id: 'timeclad-admin',
       title: 'TimeClad Admin - E-Commerce Platform Admin',
       description: 'A responsive admin dashboard for the TimeClad e-commerce platform.',
-      technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
+      technologies: ['React', 'Tailwind CSS', 'TypeScript','Express.js', 'Socket.io', 'TypeScript', 'Redis'],
       githubUrl: 'https://github.com/t-tann8/TimeClad-Admin',
       liveUrl: 'https://example.com',
       image: TimeCladAdminScreenshot
@@ -105,7 +105,7 @@ const Projects = () => {
       id: 'crsci',
       title: 'CRSci - Ed Tech Platform',
       description: 'A collaborative education technology platform for teachers, students and principals to track and elevate student performances.',
-      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io'],
+      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS', 'Node.js', 'Figma'],
       githubUrl: 'https://github.com/t-tann8/CRSci',
       liveUrl: 'https://example.com',
       image: CRSciScreenshot
@@ -114,7 +114,7 @@ const Projects = () => {
       id: '104010',
       title: '104010 - Fitness Platform',
       description: 'Innovative fitness platform that allows custom workout plans and videos for class and individual coaching sessions.',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Node.js', 'Figma'],
       githubUrl: 'https://github.com/t-tann8/104010',
       liveUrl: 'https://example.com',
       image: Screenshot104010
@@ -123,7 +123,7 @@ const Projects = () => {
       id: '104010-admin',
       title: '104010 Admin - Fitness Platform Admin',
       description: 'A responsive admin dashboard for the 104010 fitness platform.',
-      technologies: ['Next.js', 'MDX', 'Prisma', 'PostgreSQL'],
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Node.js', 'Figma'],
       githubUrl: 'https://github.com/t-tann8/104010-Admin',
       liveUrl: 'https://example.com',
       image: Screenshot104010Admin
@@ -132,54 +132,54 @@ const Projects = () => {
       id: 'hope',
       title: 'HOPE (Hearts Open Primary Education) - Website',
       description: 'A landing page for the HOPE (Hearts Open Primaru Education) organization.',
-      technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Figma'],
       githubUrl: 'https://github.com/t-tann8/HOPE',
       liveUrl: null,
       image: HOPEScreenshot
     },
     {
-      id: 'task-manager',
+      id: 'Analytics Tool',
       title: 'Relai Portal',
       description: 'A comprehensive project management application with team collaboration features and real-time updates.',
-      technologies: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
-      githubUrl: 'https://github.com/t-tann8/TaskFlow',
-      liveUrl: 'https://taskflow-demo.com',
+      technologies: ['Stripe', 'Node.js', 'React', 'Golang', 'Figma', 'Tailwind CSS', 'PostgresSQL', 'TypeScript', 'Docker'],
+      githubUrl: 'https://github.com/t-tann8?tab=repositories',
+      liveUrl: 'https://portal.relai.us/',
       image: PortalScreenshot
     },
     {
-      id: 'weather-app',
+      id: 'EV Charger Adapter Rentals',
       title: 'EVALV',
       description: 'A beautiful weather application with detailed forecasts, maps, and location-based recommendations.',
-      technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js'],
-      githubUrl: 'https://github.com/t-tann8/WeatherCast',
-      liveUrl: 'https://weathercast-app.com',
+      technologies: ['React Native', 'TypeScript', 'Firebase', 'Node.js', 'AWS EC2 Instance', 'DynamoDB', 'AWS S3'],
+      githubUrl: 'https://github.com/t-tann8?tab=repositories',
+      liveUrl: 'https://apps.apple.com/us/app/evalv/id6738658440',
       image: EVALVLogo
     },
     {
-      id: 'blog-platform',
+      id: 'Self Storage',
       title: 'Secure The Bags',
       description: 'A modern blogging platform with rich text editing, SEO optimization, and analytics dashboard.',
-      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
-      githubUrl: 'https://github.com/t-tann8/BlogSpace',
-      liveUrl: 'https://blogspace-demo.com',
+      technologies: ['React Native', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Node.js', 'Figma', 'Redux', 'Firebase'],
+      githubUrl: 'https://github.com/t-tann8?tab=repositories',
+      liveUrl: 'https://apps.apple.com/us/app/secure-the-bags/id6717573132?l=ru',
       image: STBLogo
     },
     {
-      id: 'chat-app',
+      id: 'Relai App for Pittsburgh Co-Working Spaces',
       title: 'Avenu',
       description: 'A real-time messaging application with group chats, file sharing, and video calling capabilities.',
-      technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js'],
-      githubUrl: 'https://github.com/t-tann8/ChatConnect',
-      liveUrl: 'https://chatconnect-demo.com',
+      technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js', 'TypeScript', 'Tailwind CSS', 'Figma'],
+      githubUrl: 'https://github.com/t-tann8?tab=repositories',
+      liveUrl: 'https://apps.apple.com/us/app/avenu/id6739266506',
       image: AvenuLogo
     },
     {
-      id: 'e-learning',
+      id: 'Relai App for Atlanta Gyms',
       title: 'Union Fithub',
       description: 'An interactive e-learning platform with video courses, quizzes, progress tracking, and certificates.',
       technologies: ['Angular', 'Node.js', 'AWS S3', 'Stripe'],
-      githubUrl: 'https://github.com/t-tann8/EduLearn',
-      liveUrl: 'https://edulearn-platform.com',
+      githubUrl: 'https://github.com/t-tann8?tab=repositories',
+      liveUrl: 'https://apps.apple.com/us/app/the-union-fithub/id6740445208',
       image: UnionFithubLogo
     }
   ]

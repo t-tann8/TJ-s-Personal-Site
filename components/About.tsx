@@ -5,7 +5,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get to know more about my journey, passion, and what drives me as a developer
+            Learn more about what drives me as a developer and product builder.
           </p>
         </div>
         
@@ -20,17 +20,16 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">My Story</h3>
             <div className="space-y-4 text-gray-600">
               <p>
-                I&apos;m a passionate developer with a love for creating innovative solutions and beautiful user experiences. 
-                With a strong foundation in modern web technologies, I enjoy tackling complex problems and turning 
-                ideas into reality.
+                I am a builder at heart. One of the first challenges I fell in love was assembling furniture for my family and neighbors as young as seven years old.
+                I have carried that wonder for building from scratch since then. In college, I founded and operated a storage and logistics company that scaled across the state of Virginia.
               </p>
               <p>
-                My journey in development started with curiosity about how websites work, and it has evolved into 
-                a career focused on building scalable, maintainable applications that make a difference.
+                Afterwards, I founded a tech company, Relai, where my journey into  development began.
+                We worked with several development shops to build our initial product suite, I began learning how to code to both manage outsourced developers and reduce our dependency on them.
+                After growing more comfortable with coding, I attended a bootcamp to learn how to build full-stack applications from scratch. Afterwards, I dove into building my own products. Please see the projects section to learn more about my work.
               </p>
               <p>
-                When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                or sharing knowledge with the developer community.
+                When I am not coding, I am reading a book most likely on personal finance, psychology, or new technologies. I enjoyed educational podcasts and documentaries with a sprinkle of action, suspenseful movies.
               </p>
             </div>
             
@@ -47,11 +46,19 @@ const About = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-                  <span className="text-gray-600">UI/UX Design</span>
+                  <span className="text-gray-600">Deployment</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
                   <span className="text-gray-600">Mobile Development</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
+                  <span className="text-gray-600">Product Management</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
+                  <span className="text-gray-600">Product Marketing</span>
                 </div>
               </div>
             </div>
