@@ -9,6 +9,11 @@ import CRSciScreenshot from '../assets/images/CRSciScreenshot.png'
 import Screenshot104010 from '../assets/images/104010Screenshot.png'
 import Screenshot104010Admin from '../assets/images/104010-AdminScreenshot.png'
 import HOPEScreenshot from '../assets/images/HOPEScreenshot.png'
+import PortalScreenshot from '../assets/images/PortalScreenshot.png'
+import EVALVLogo from '../assets/images/EVALVLogo.png'
+import STBLogo from '../assets/images/STBLogo.png'
+import AvenuLogo from '../assets/images/AvenuLogo.png'
+import UnionFithubLogo from '../assets/images/UnionFithubLogo.png'
 
 const ProjectCard = ({ project }: { project: any }) => {
   return (
@@ -139,7 +144,7 @@ const Projects = () => {
       technologies: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
       githubUrl: 'https://github.com/t-tann8/TaskFlow',
       liveUrl: 'https://taskflow-demo.com',
-      image: null
+      image: PortalScreenshot
     },
     {
       id: 'weather-app',
@@ -148,7 +153,7 @@ const Projects = () => {
       technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js'],
       githubUrl: 'https://github.com/t-tann8/WeatherCast',
       liveUrl: 'https://weathercast-app.com',
-      image: null
+      image: EVALVLogo
     },
     {
       id: 'blog-platform',
@@ -157,7 +162,7 @@ const Projects = () => {
       technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
       githubUrl: 'https://github.com/t-tann8/BlogSpace',
       liveUrl: 'https://blogspace-demo.com',
-      image: null
+      image: STBLogo
     },
     {
       id: 'chat-app',
@@ -166,7 +171,7 @@ const Projects = () => {
       technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js'],
       githubUrl: 'https://github.com/t-tann8/ChatConnect',
       liveUrl: 'https://chatconnect-demo.com',
-      image: null
+      image: AvenuLogo
     },
     {
       id: 'e-learning',
@@ -175,7 +180,7 @@ const Projects = () => {
       technologies: ['Angular', 'Node.js', 'AWS S3', 'Stripe'],
       githubUrl: 'https://github.com/t-tann8/EduLearn',
       liveUrl: 'https://edulearn-platform.com',
-      image: null
+      image: UnionFithubLogo
     }
   ]
 

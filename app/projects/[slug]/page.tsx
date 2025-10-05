@@ -8,6 +8,11 @@ import CRSciScreenshot from '../../../assets/images/CRSciScreenshot.png'
 import Screenshot104010 from '../../../assets/images/104010Screenshot.png'
 import Screenshot104010Admin from '../../../assets/images/104010-AdminScreenshot.png'
 import HOPEScreenshot from '../../../assets/images/HOPEScreenshot.png'
+import PortalScreenshot from '../../../assets/images/PortalScreenshot.png'
+import EVALVLogo from '../../../assets/images/EVALVLogo.png'
+import STBLogo from '../../../assets/images/STBLogo.png'
+import AvenuLogo from '../../../assets/images/AvenuLogo.png'
+import UnionFithubLogo from '../../../assets/images/UnionFithubLogo.png'
 
 // Project data - this should match the data in Projects.tsx
 const projects = [
@@ -133,12 +138,12 @@ const projects = [
     },
     {
       id: 'task-manager',
-      title: 'TaskFlow - Project Management Tool',
+      title: 'Relai Portal',
       description: 'A comprehensive project management application with team collaboration features and real-time updates.',
       technologies: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
       githubUrl: 'https://github.com/t-tann8/TaskFlow',
       liveUrl: 'https://taskflow-demo.com',
-      image: null,
+      image: PortalScreenshot,
       longDescription: 'TaskFlow is a modern project management tool designed to streamline team collaboration and project tracking. Built with Vue.js and real-time capabilities, it provides teams with intuitive tools for task management, progress tracking, and seamless communication.',
       features: [
         'Real-time task updates and notifications',
@@ -153,12 +158,12 @@ const projects = [
     },
     {
       id: 'weather-app',
-      title: 'WeatherCast - Weather Dashboard',
+      title: 'EVALV',
       description: 'A beautiful weather application with detailed forecasts, maps, and location-based recommendations.',
       technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js'],
       githubUrl: 'https://github.com/t-tann8/WeatherCast',
       liveUrl: 'https://weathercast-app.com',
-      image: null,
+      image: EVALVLogo,
       longDescription: 'WeatherCast delivers comprehensive weather information with an elegant, user-friendly interface. Featuring detailed forecasts, interactive maps, and personalized recommendations, it helps users stay informed about weather conditions wherever they are.',
       features: [
         'Detailed 7-day weather forecasts',
@@ -173,12 +178,12 @@ const projects = [
     },
     {
       id: 'blog-platform',
-      title: 'BlogSpace - Content Management Platform',
+      title: 'Secure The Bags',
       description: 'A modern blogging platform with rich text editing, SEO optimization, and analytics dashboard.',
       technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
       githubUrl: 'https://github.com/t-tann8/BlogSpace',
       liveUrl: 'https://blogspace-demo.com',
-      image: null,
+      image: STBLogo,
       longDescription: 'BlogSpace is a comprehensive content management platform designed for bloggers, writers, and content creators. It combines powerful writing tools with advanced SEO features and detailed analytics to help creators build and grow their audience.',
       features: [
         'Rich text editor with markdown support',
@@ -193,12 +198,12 @@ const projects = [
     },
     {
       id: 'chat-app',
-      title: 'ChatConnect - Real-time Messaging',
+      title: 'Avenu',
       description: 'A real-time messaging application with group chats, file sharing, and video calling capabilities.',
       technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js'],
       githubUrl: 'https://github.com/t-tann8/ChatConnect',
       liveUrl: 'https://chatconnect-demo.com',
-      image: null,
+      image: AvenuLogo,
       longDescription: 'ChatConnect revolutionizes communication with its real-time messaging platform. Featuring instant messaging, group chats, file sharing, and video calling, it provides a complete communication solution for personal and professional use.',
       features: [
         'Real-time instant messaging',
@@ -213,12 +218,12 @@ const projects = [
     },
     {
       id: 'e-learning',
-      title: 'EduLearn - Online Learning Platform',
+      title: 'Union Fithub',
       description: 'An interactive e-learning platform with video courses, quizzes, progress tracking, and certificates.',
       technologies: ['Angular', 'Node.js', 'AWS S3', 'Stripe'],
       githubUrl: 'https://github.com/t-tann8/EduLearn',
       liveUrl: 'https://edulearn-platform.com',
-      image: null,
+      image: UnionFithubLogo,
       longDescription: 'EduLearn transforms online education with its comprehensive learning management system. Designed for educators and students, it provides interactive courses, assessment tools, progress tracking, and certification programs.',
       features: [
         'Interactive video course creation',
