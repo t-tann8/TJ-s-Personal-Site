@@ -138,7 +138,7 @@ const Projects = () => {
       image: HOPEScreenshot
     },
     {
-      id: 'Analytics Tool',
+      id: 'task-manager',
       title: 'Relai Portal',
       description: 'A comprehensive project management application with team collaboration features and real-time updates.',
       technologies: ['Stripe', 'Node.js', 'React', 'Golang', 'Figma', 'Tailwind CSS', 'PostgresSQL', 'TypeScript', 'Docker'],
@@ -147,36 +147,36 @@ const Projects = () => {
       image: PortalScreenshot
     },
     {
-      id: 'EV Charger Adapter Rentals',
+      id: 'weather-app',
       title: 'EVALV',
-      description: 'A beautiful weather application with detailed forecasts, maps, and location-based recommendations.',
+      description: 'A Relai App built to allow EV owners to rent charging adapters.',
       technologies: ['React Native', 'TypeScript', 'Firebase', 'Node.js', 'AWS EC2 Instance', 'DynamoDB', 'AWS S3'],
       githubUrl: 'https://github.com/t-tann8?tab=repositories',
       liveUrl: 'https://apps.apple.com/us/app/evalv/id6738658440',
       image: EVALVLogo
     },
     {
-      id: 'Self Storage',
+      id: 'blog-platform',
       title: 'Secure The Bags',
-      description: 'A modern blogging platform with rich text editing, SEO optimization, and analytics dashboard.',
+      description: 'A Relai App built to allow event goers to store their belongings and retrieve them later at Exchange Zones.',
       technologies: ['React Native', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Node.js', 'Figma', 'Redux', 'Firebase'],
       githubUrl: 'https://github.com/t-tann8?tab=repositories',
       liveUrl: 'https://apps.apple.com/us/app/secure-the-bags/id6717573132?l=ru',
       image: STBLogo
     },
     {
-      id: 'Relai App for Pittsburgh Co-Working Spaces',
+      id: 'chat-app',
       title: 'Avenu',
-      description: 'A real-time messaging application with group chats, file sharing, and video calling capabilities.',
+      description: 'A Relai App built for Pittsburgh Co-Working Spaces to offer a seamless storage experience for their members.',
       technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js', 'TypeScript', 'Tailwind CSS', 'Figma'],
       githubUrl: 'https://github.com/t-tann8?tab=repositories',
       liveUrl: 'https://apps.apple.com/us/app/avenu/id6739266506',
       image: AvenuLogo
     },
     {
-      id: 'Relai App for Atlanta Gyms',
+      id: 'e-learning',
       title: 'Union Fithub',
-      description: 'An interactive e-learning platform with video courses, quizzes, progress tracking, and certificates.',
+      description: 'A Relai App built for Atlanta Gyms to offer a seamless storage experience for their members.',
       technologies: ['Angular', 'Node.js', 'AWS S3', 'Stripe'],
       githubUrl: 'https://github.com/t-tann8?tab=repositories',
       liveUrl: 'https://apps.apple.com/us/app/the-union-fithub/id6740445208',
