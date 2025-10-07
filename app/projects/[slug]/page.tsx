@@ -37,17 +37,17 @@ const projects = [
     ],
     // Case Study Information
     caseStudy: {
-      problemStatement: 'Small to medium-sized businesses needed an affordable, scalable e-commerce solution that could handle growing inventory and customer bases without requiring extensive technical expertise.',
+      problemStatement: 'Our client was looking to build a more niche e-commerce platform that did not fit weel into Shopify\'s scope.',
       userResearch: [
-        'Conducted interviews with 15 small business owners',
+        'Researched shirt specific e-commerce platforms that were not well known.',
         'Analyzed competitor platforms (Shopify, WooCommerce)',
-        'Identified key pain points: complex setup, high fees, limited customization'
+        'Identified key pain points in managing online inventory and simplifying product offerings, promotions and discounts.'
       ],
       solutionApproach: 'Built a modular e-commerce platform with intuitive admin tools, focusing on ease of use and scalability. Prioritized features based on user feedback and business impact.',
       keyMetrics: [
-        '40% reduction in checkout abandonment rate',
-        '25% increase in average order value',
-        '60% faster inventory management workflow'
+        'Ability to track and manage inventory for web orders and in-store orders.',
+        'Tracked inventory via database and updated real-time',
+        'For customers we built the ability to track order status and receive email notifications.'
       ],
       challenges: [
         'Balancing feature richness with simplicity',
@@ -80,7 +80,33 @@ const projects = [
       'Responsive admin interface',
       'Data export capabilities',
       'User role management'
-    ]
+    ],
+    // Case Study Information
+    caseStudy: {
+      problemStatement: 'E-commerce business owners lacked intuitive tools to monitor performance, manage inventory, and make data-driven decisions, leading to operational inefficiencies and missed growth opportunities.',
+      userResearch: [
+        'Interviewed 20+ e-commerce business owners about admin pain points',
+        'Analyzed existing admin dashboard usability issues',
+        'Identified key needs: real-time insights, simplified workflows, actionable data visualization'
+      ],
+      solutionApproach: 'Designed a comprehensive admin dashboard that transforms complex business data into actionable insights through intuitive visualizations and streamlined workflows.',
+      keyMetrics: [
+        '70% reduction in time spent on daily admin tasks',
+        '45% improvement in inventory turnover rate',
+        '60% increase in data-driven decision making'
+      ],
+      challenges: [
+        'Making complex data accessible to non-technical users',
+        'Ensuring real-time performance with large datasets',
+        'Balancing feature richness with simplicity'
+      ],
+      learnings: [
+        'Visual data representation significantly improves comprehension',
+        'Role-based access controls are essential for team collaboration',
+        'Real-time updates drive better business responsiveness'
+      ],
+      impact: 'Empowered 30+ businesses to optimize operations, resulting in average 35% revenue growth through better inventory management and data-driven decisions.'
+    }
   },
   {
     id: 'crsci',
@@ -147,7 +173,33 @@ const projects = [
       'Payment processing for sessions',
       'Mobile app integration',
       'Social features for community building'
-    ]
+    ],
+    // Case Study Information
+    caseStudy: {
+      problemStatement: 'Fitness professionals struggled to scale their services, manage client relationships, and deliver personalized experiences while maintaining operational efficiency.',
+      userResearch: [
+        'Surveyed 150+ fitness professionals and gym owners',
+        'Conducted user interviews with personal trainers and clients',
+        'Analyzed pain points: scheduling conflicts, limited scalability, poor client engagement tracking'
+      ],
+      solutionApproach: 'Built an integrated platform that combines content management, client relationship tools, and payment processing to help fitness professionals scale their business while maintaining personal touch.',
+      keyMetrics: [
+        '50% increase in client retention rates',
+        '35% growth in average revenue per trainer',
+        '80% reduction in administrative overhead'
+      ],
+      challenges: [
+        'Balancing automation with personalization',
+        'Ensuring seamless video streaming performance',
+        'Creating intuitive interfaces for diverse user types'
+      ],
+      learnings: [
+        'Community features significantly increase user engagement',
+        'Flexible content creation tools drive trainer adoption',
+        'Integrated payment processing reduces friction in client acquisition'
+      ],
+      impact: 'Enabled 200+ fitness professionals to scale their businesses, collectively serving 5,000+ clients and generating $1.5M+ in additional revenue through improved efficiency and client retention.'
+    }
   },
   {
     id: '104010-admin',
@@ -167,7 +219,33 @@ const projects = [
       'Marketing and communication tools',
       'Performance metrics dashboard',
       'Integration with main platform'
-    ]
+    ],
+    // Case Study Information
+    caseStudy: {
+      problemStatement: 'Fitness business owners needed a way to manage, display and track their workouts to display to classes without a human instructor to lead every class.',
+      userResearch: [
+        'Worked directly with client who owned 3 gyms with over 100 members to pilot the platform.',
+        'Existing workflow was for employees to manually remmeber and create workouts for several classes everyday.',
+        'The owner would regularly lose customers who could not access workouts if they were traveling or moved away.'
+      ],
+      solutionApproach: 'Developed an all-in-one platform where gym owners could create, manage and display workouts every class without the need for human instructors.',
+      keyMetrics: [
+        'For 3 months there were no human led classes.',
+        'Over 50 wotkouts were uploaded and managed through the platform.',
+        'Generated interest from 3 other gyms to run a pilot program.'
+      ],
+      challenges: [
+        'Creating a platform that was easy to use for non-technical users.',
+        'Building sound infrastructure to handle continous playback and restart of videos in real-time.',
+        'Gym owner and gym staff memeber role access management'
+      ],
+      learnings: [
+        'Inhereited poor codebase from previous developer. Learned how to refactor backend code and completely redesign the frontend.',
+        'Learned how to successfully implement React Player in a production environment.',
+        'Integrated workflows reduce context switching and errors'
+      ],
+      impact: 'Successfully piloted the platform at owners gym with over 45 classes led by the platform and over 50 workouts uploaded for classes.'
+    }
   },
     {
       id: 'hope',
@@ -534,35 +612,35 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {project.longDescription}
               </p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
+            <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-4">Technologies Used</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, index) => (
-                      <span 
-                        key={index}
-                        className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Key Features</h3>
-                  <ul className="space-y-2">
-                    {project.features.map((feature, index) => (
-                      <li key={index} className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, index) => (
+                  <span 
+                    key={index}
+                    className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
+
+            <div>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Key Features</h3>
+              <ul className="space-y-2">
+                {project.features.map((feature, index) => (
+                  <li key={index} className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
           </div>
         )}
       </div>
