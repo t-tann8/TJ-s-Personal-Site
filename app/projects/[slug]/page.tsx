@@ -403,7 +403,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       {/* Header */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -418,7 +418,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       </div>
 
       {/* Hero Section */}
-      <div className="bg-white">
+      <div className="bg-gradient-to-r from-white via-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -481,7 +481,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         {project.caseStudy ? (
           <div className="space-y-16">
             {/* Problem Statement */}
-            <section className="bg-white rounded-lg p-8 shadow-sm">
+            <section className="bg-gradient-to-br from-white to-red-50 rounded-lg p-8 shadow-sm border border-red-100">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -496,7 +496,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </section>
 
             {/* User Research */}
-            <section className="bg-white rounded-lg p-8 shadow-sm">
+            <section className="bg-gradient-to-br from-white to-blue-50 rounded-lg p-8 shadow-sm border border-blue-100">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -516,7 +516,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </section>
 
             {/* Solution Approach */}
-            <section className="bg-white rounded-lg p-8 shadow-sm">
+            <section className="bg-gradient-to-br from-white to-green-50 rounded-lg p-8 shadow-sm border border-green-100">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -531,7 +531,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </section>
 
             {/* Key Metrics */}
-            <section className="bg-white rounded-lg p-8 shadow-sm">
+            <section className="bg-gradient-to-br from-white to-purple-50 rounded-lg p-8 shadow-sm border border-purple-100">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -550,7 +550,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </section>
 
             {/* Challenges */}
-            <section className="bg-white rounded-lg p-8 shadow-sm">
+            <section className="bg-gradient-to-br from-white to-yellow-50 rounded-lg p-8 shadow-sm border border-yellow-100">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -570,7 +570,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </section>
 
             {/* Learnings */}
-            <section className="bg-white rounded-lg p-8 shadow-sm">
+            <section className="bg-gradient-to-br from-white to-indigo-50 rounded-lg p-8 shadow-sm border border-indigo-100">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -607,7 +607,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         ) : (
           /* Fallback for projects without case study data */
           <div className="space-y-12">
-            <div className="bg-white rounded-lg p-8 shadow-sm">
+            <div className="bg-gradient-to-br from-white to-gray-50 rounded-lg p-8 shadow-sm border border-gray-100">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {project.longDescription}
