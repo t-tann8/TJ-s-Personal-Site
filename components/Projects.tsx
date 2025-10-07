@@ -190,7 +190,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Product Case Studies</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Take a look at the problems, use cases and solutions I've built from scratch using the most modern technologies and frameworks.
+            Take a look at the problems, use cases and solutions I&apos;ve built from scratch using the most modern technologies and frameworks.
           </p>
         </div>
         
