@@ -43,19 +43,19 @@ const Timeline = () => {
     {
       year: 'March 2024',
       title: 'Completed TimeClad',
-      description: 'Completed TimeClad, a full-stack e-commerce platform.',
+      description: 'Completed TimeClad, a full-stack e-commerce platform for a client\'s niche custom apparel business.',
       category: 'project'
     },
     {
       year: 'June 2024',
       title: 'Completed CRSci',
-      description: 'Completed CRSci, a collaborative education technology platform.',
+      description: 'Completed CRSci, a collaborative education technology platform built for teachers, students and school administrators.',
       category: 'project'
     },
     {
       year: 'September 2024',
       title: 'Completed 104010',
-      description: 'Completed 104010, a fitness platform.',
+      description: 'Completed 104010, a fitness platform built for gyms and personal trainers.',
       category: 'project'
     },
     {

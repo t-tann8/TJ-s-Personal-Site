@@ -168,7 +168,7 @@ const Projects = () => {
       id: 'chat-app',
       title: 'Avenu',
       description: 'A Relai App built for Pittsburgh Co-Working Spaces to offer a seamless storage experience for their members.',
-      technologies: ['React', 'Socket.io', 'WebRTC', 'Express.js', 'TypeScript', 'Tailwind CSS', 'Figma'],
+      technologies: ['React Native', 'Express.js', 'TypeScript', 'Tailwind CSS', 'Figma', 'Firebase'],
       githubUrl: 'https://github.com/t-tann8?tab=repositories',
       liveUrl: 'https://apps.apple.com/us/app/avenu/id6739266506',
       image: AvenuLogo
@@ -177,7 +177,7 @@ const Projects = () => {
       id: 'e-learning',
       title: 'Union Fithub',
       description: 'A Relai App built for Atlanta Gyms to offer a seamless storage experience for their members.',
-      technologies: ['Angular', 'Node.js', 'AWS S3', 'Stripe'],
+      technologies: ['React Native', 'Node.js', 'AWS S3', 'Stripe', 'Firebase'],
       githubUrl: 'https://github.com/t-tann8?tab=repositories',
       liveUrl: 'https://apps.apple.com/us/app/the-union-fithub/id6740445208',
       image: UnionFithubLogo
@@ -188,9 +188,9 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Product Case Studies</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of my recent work and side projects
+            Deep dives into product thinking, user research, and strategic decision-making that drove successful outcomes
           </p>
         </div>
         
