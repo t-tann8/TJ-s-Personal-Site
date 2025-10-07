@@ -104,29 +104,29 @@ const projects = [
     ],
     // Case Study Information
     caseStudy: {
-      problemStatement: 'Educational institutions struggled with fragmented learning management systems that didn\'t provide real-time insights into student performance or facilitate effective teacher-student collaboration.',
+      problemStatement: 'Educational institutions struggled with fragmented learning management systems that didn\'t provide real-time insights into student performance nor was it clear how students were performing based on actual state learning standards.',
       userResearch: [
-        'Surveyed 200+ educators across 15 schools',
-        'Conducted focus groups with teachers, students, and administrators',
-        'Analyzed existing LMS pain points: poor UX, limited analytics, lack of real-time feedback'
+        'Surveyed 200+ educators across 15 schools in the state of Georgia.',
+        'Almost no teachers knew how each student was performing against state learning standards until annual tests.',
+        'School administrators were unable to leverage stident performance against state learning standards to request more resources from the distrcit and state.'
       ],
       solutionApproach: 'Designed an integrated platform that combines video learning, assessment tools, and real-time analytics to create a seamless educational experience for all stakeholders.',
       keyMetrics: [
-        '35% improvement in student engagement scores',
-        '50% reduction in administrative reporting time',
-        '28% increase in parent-teacher communication frequency'
+        '20 teachers were able to use the platform to track student progress against state learning standards.',
+        '10 school administrators were able to leverage student performance against state learning standards to request more resources from the distrcit and state.',
+        'Close to 200 students were able to use the platform to track progress and direct their learning.'
       ],
       challenges: [
-        'Balancing feature complexity with usability',
-        'Ensuring accessibility compliance for educational standards',
-        'Managing real-time data synchronization across multiple user types'
+        'Incorporating complex data flows in the platform that made student data accessible to adminstrators and teachers. ',
+        'Classroom management flexibility for teachers to create different learning plans that varied between grades and classes within each grade.',
+        'Implementing timestamp questions during video lessons.'
       ],
       learnings: [
-        'Teacher buy-in is crucial for student adoption',
+        'Teacher buy-in is crucial for student adoption.',
         'Real-time feedback loops significantly improve learning outcomes',
         'Parent engagement features drive platform retention'
       ],
-      impact: 'Deployed across 25+ schools, serving 5,000+ students and improving overall academic performance metrics by 20%.'
+      impact: 'Deployed across 10 schools, serving 200 students and improving overall academic performance metrics by 20% in a pilot. Even more important the founder was able to secure more funding to expand the platform\'s reach.'
     }
   },
   {
