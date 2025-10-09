@@ -68,7 +68,7 @@ const projects = [
     description: 'A responsive admin dashboard for the TimeClad e-commerce platform.',
     technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
     githubUrl: 'https://github.com/t-tann8/TimeClad-Admin',
-    liveUrl: 'https://example.com',
+    // liveUrl: 'https://example.com',
     image: TimeCladAdminScreenshot,
     longDescription: 'The TimeClad Admin dashboard provides comprehensive management tools for e-commerce operations. Built with React and featuring interactive charts and real-time data visualization, it allows administrators to monitor sales, manage inventory, track customer behavior, and oversee all aspects of the platform.',
     features: [
@@ -114,7 +114,7 @@ const projects = [
     description: 'A collaborative education technology platform for teachers, students and principals to track and elevate student performances.',
     technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Socket.io', 'Redux Toolkit', 'NextAuth.js', 'React Player', 'HTML-to-DOCX', 'Mammoth', 'AWS S3', 'Stripe', 'Nodemailer', 'Node-cron'],
     githubUrl: 'https://github.com/t-tann8/CRSci',
-    liveUrl: 'https://example.com',
+    liveUrl: null,
     image: CRSciScreenshot,
     longDescription: 'CRSci is a comprehensive educational technology platform designed for schools, teachers, and students. It\'s a Learning Management System (LMS) that provides interactive video-based learning with integrated assessments, classroom management, and progress tracking.',
     features: [
@@ -161,7 +161,7 @@ const projects = [
     description: 'Innovative fitness platform that allows custom workout plans and videos for class and individual coaching sessions.',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel', 'Express.js', 'AWS S3 SDK', 'Stripe', 'Nodemailer', 'MySQL', 'Mogran for Logging', 'Firebase'],
     githubUrl: 'https://github.com/t-tann8/104010',
-    liveUrl: 'https://example.com',
+    // liveUrl: 'https://example.com',
     image: Screenshot104010,
     longDescription: '104010 is a production-ready, scalable fitness management platform designed for gym owners and fitness professionals to manage workouts, users, and subscriptions with a modern, responsive interface.',
     features: [
@@ -273,7 +273,7 @@ const projects = [
       description: 'A comprehensive project management application with team collaboration features and real-time updates.',
       technologies: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
       githubUrl: 'https://github.com/t-tann8/TaskFlow',
-      liveUrl: 'https://taskflow-demo.com',
+      liveUrl: 'https://portal.relai.us/Login/Welcome',
       image: PortalScreenshot,
       longDescription: 'TaskFlow is a modern project management tool designed to streamline team collaboration and project tracking. Built with Vue.js and real-time capabilities, it provides teams with intuitive tools for task management, progress tracking, and seamless communication.',
       features: [
