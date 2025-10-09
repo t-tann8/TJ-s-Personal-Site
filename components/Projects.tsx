@@ -92,15 +92,15 @@ const Projects = () => {
       liveUrl: 'https://example.com',
       image: TimeCladScreenshot
     },
-    {
-      id: 'timeclad-admin',
-      title: 'TimeClad Admin - E-Commerce Platform Admin',
-      description: 'A responsive admin dashboard for the TimeClad e-commerce platform.',
-      technologies: ['React', 'Tailwind CSS', 'TypeScript','Express.js', 'Socket.io', 'TypeScript', 'Redis'],
-      githubUrl: 'https://github.com/t-tann8/TimeClad-Admin',
-      liveUrl: 'https://example.com',
-      image: TimeCladAdminScreenshot
-    },
+    // {
+    //   id: 'timeclad-admin',
+    //   title: 'TimeClad Admin - E-Commerce Platform Admin',
+    //   description: 'A responsive admin dashboard for the TimeClad e-commerce platform.',
+    //   technologies: ['React', 'Tailwind CSS', 'TypeScript','Express.js', 'Socket.io', 'TypeScript', 'Redis'],
+    //   githubUrl: 'https://github.com/t-tann8/TimeClad-Admin',
+    //   liveUrl: 'https://example.com',
+    //   image: TimeCladAdminScreenshot
+    // },
     {
       id: 'crsci',
       title: 'CRSci - Ed Tech Platform',
@@ -119,15 +119,15 @@ const Projects = () => {
       liveUrl: 'https://example.com',
       image: Screenshot104010
     },
-    {
-      id: '104010-admin',
-      title: '104010 Admin - Fitness Platform Admin',
-      description: 'A responsive admin dashboard for the 104010 fitness platform.',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Node.js', 'Figma'],
-      githubUrl: 'https://github.com/t-tann8/104010-Admin',
-      liveUrl: 'https://example.com',
-      image: Screenshot104010Admin
-    },
+    // {
+    //   id: '104010-admin',
+    //   title: '104010 Admin - Fitness Platform Admin',
+    //   description: 'A responsive admin dashboard for the 104010 fitness platform.',
+    //   technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Node.js', 'Figma'],
+    //   githubUrl: 'https://github.com/t-tann8/104010-Admin',
+    //   liveUrl: 'https://example.com',
+    //   image: Screenshot104010Admin
+    // },
     {
       id: 'hope',
       title: 'HOPE (Hearts Open Primary Education) - Website',
