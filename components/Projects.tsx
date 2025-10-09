@@ -89,7 +89,7 @@ const Projects = () => {
       description: 'A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe','Express.js', 'Socket.io', 'TypeScript', 'Tailwind CSS', 'Redis'],
       githubUrl: 'https://github.com/t-tann8/TimeClad',
-      liveUrl: 'https://example.com',
+      // liveUrl: 'https://example.com',
       image: TimeCladScreenshot
     },
     // {
@@ -107,7 +107,7 @@ const Projects = () => {
       description: 'A collaborative education technology platform for teachers, students and principals to track and elevate student performances.',
       technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS', 'Node.js', 'Figma'],
       githubUrl: 'https://github.com/t-tann8/CRSci',
-      liveUrl: 'https://example.com',
+      // liveUrl: 'https://example.com',
       image: CRSciScreenshot
     },
     {
@@ -116,7 +116,7 @@ const Projects = () => {
       description: 'Innovative fitness platform that allows custom workout plans and videos for class and individual coaching sessions.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Node.js', 'Figma'],
       githubUrl: 'https://github.com/t-tann8/104010',
-      liveUrl: 'https://example.com',
+      // liveUrl: 'https://example.com',
       image: Screenshot104010
     },
     // {
@@ -134,7 +134,7 @@ const Projects = () => {
       description: 'A landing page for the HOPE (Hearts Open Primaru Education) organization.',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Figma'],
       githubUrl: 'https://github.com/t-tann8/HOPE',
-      liveUrl: null,
+      // liveUrl: null,
       image: HOPEScreenshot
     },
     {
