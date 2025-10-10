@@ -72,7 +72,7 @@ const Timeline = () => {
     },
     {
       year: 'March 2025',
-      title: 'EVALV',
+      title: 'Launched EVALV',
       description: 'Launched EVALV Mobile App. Over 100 active users in the first month. EVALV is a mobile app that allows users to rent EV chargers from Exchange Zones.',
       category: 'project'
     },
