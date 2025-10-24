@@ -270,21 +270,17 @@ const projects = [
     {
       id: 'task-manager',
       title: 'Relai Portal',
-      description: 'A comprehensive project management application with team collaboration features and real-time updates.',
+      description: 'Portal is the command center for all Relai applications providing real-time udpdates, visibility and tracking to activity across Exchange Zones.',
       technologies: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
       githubUrl: 'https://github.com/t-tann8/TaskFlow',
       liveUrl: 'https://portal.relai.us/Login/Welcome',
       image: PortalScreenshot,
-      longDescription: 'TaskFlow is a modern project management tool designed to streamline team collaboration and project tracking. Built with Vue.js and real-time capabilities, it provides teams with intuitive tools for task management, progress tracking, and seamless communication.',
+      longDescription: 'Portal is the command center for all Relai applications providing real-time udpdates, visibility and tracking to activity across Exchange Zones. Built with Vue.js and real-time capabilities, it provides teams with intuitive tools for task management, progress tracking, and seamless communication.',
       features: [
-        'Real-time task updates and notifications',
-        'Team collaboration and assignment features',
-        'Project timeline and milestone tracking',
-        'File sharing and document management',
-        'Progress analytics and reporting',
-        'Customizable project templates',
-        'Integration with popular tools',
-        'Mobile app for on-the-go management'
+        'Real-time updates to activity across Exchange Zones',
+        'Multi-tenant architecture for multiple clients',
+        'App monitoring and management',
+        'API design and implementation',
       ]
     },
     {
